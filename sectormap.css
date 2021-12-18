@@ -1,0 +1,301 @@
+  #map {
+    height: 100%;
+  }
+  #searchPolygons {
+    width: 100%vw;
+    width: 100%;
+  }
+  #searchInput {
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 0 5px 0 5px;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .coordinates{
+    font-weight: bold;
+    padding-top: 5px;
+  }
+  .warning {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size:10px;
+    color: red;
+  }
+  #site-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  #changelog-link {
+    display:inline-block;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  #SearchAndResults {
+    margin: 0 10px 0 10px;
+  }
+  .field-label {
+     padding: 10px 0 4px 0;
+     display: inline-block;
+  }
+  #searchResults {
+    border: 1px solid rgba(0,0,0,0.4);
+    height: 100px;
+    width: 100%vw;
+    width: 100%;
+    overflow: auto !important;
+  }
+  #results-explanation {
+    padding: 10px 0 4px 0;
+    display: inline-block;
+  }
+  #NormalOverlayButton{
+    left: 0px !important;
+    display: none;
+  }
+  #PoliticalOverlayButton{
+    left: 0px !important;
+    z-index: 1 !important;
+  }
+  #PoliticsLegendOverlayButton{
+    top: 62px !important;
+    display: none;
+  }
+  .system-list li{
+    margin: 4px 0 0 4px;
+  }
+  .system-title{
+    display:inline;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .system-goto{
+    float: right;
+    display: inline;
+    margin-left: 15px;
+  }
+  .system-goto img{
+    width: 20px;
+    height: 20px;
+  }
+  .system-sector{
+    display: block;
+  }
+  .system-list-goto{
+    float: right;
+    display: inline;
+    margin-left: 10px;
+  }
+  .system-list-goto img{
+    width: 15px;
+    height: 15px;
+  }
+  .planet-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .planet-system-list{
+    display: inline;
+  }
+  .sector-list{
+
+  }
+  @media only screen and (min-width: 0px) and (max-width: 650px) {
+    .gButtonShort {
+      display: block;
+    }
+    .gButtonLong {
+      display: none;
+    }
+    #coords {
+      display: none !important;
+    }
+    #compass-open {
+      display: none !important;
+    }
+    #compass-closed-button {
+      display: none !important;
+      border: unset;
+      width: 30px;
+      height: 30px;
+      padding: unset;
+      margin: unset;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    #compass-closed {
+      display: none !important;
+      margin-right: 10px;
+      height: 30px;
+      width: 30px;
+      top: 60px !important;
+      background-image: url('compass.png');
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    #politics-legend {
+      display: none;
+      font-size: 12px;
+      height: 100px;
+      width: 100px;
+      overflow: auto;
+      background-color: white;
+      box-Shadow: 0 2px 6px rgba(0,0,0,.3);
+      border-radius: 10px;
+      margin: 0 0 10px 10px;
+      background-color: #b4bcc7;
+    }
+    #OSX-politics-legend {
+      display: none;
+
+    }
+    #politics-legend textarea:focus, input:focus {
+      outline: none;
+    }
+    #politics-legend li {
+      text-align: left;
+      list-style-type: none;
+    }
+    #politics-legend-list {
+      margin-top: 14px;
+      overflow: hidden;
+    }
+    #politics-legend-title {
+      position: absolute;
+      background-color: rgb(163,162,177);
+      height: 20px;
+      padding-top: 6px;
+      z-index: 100;
+      border-radius: 10px 10px 0 0;
+      width: 100px;
+    }
+    .politics-legend-item {
+      position: relative;
+      padding-left: 25px;
+      text-indent: -25px;
+      margin: 2px 0 2px 0;
+      display: inline-block;
+    }
+    .politics-legend-item input {
+      padding-left: 20px;
+      border-color: white !important;
+      border-width: 0px;
+      background-color: inherit;
+
+    }
+    .politics-legend-item .legend-color {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 4px;
+    }
+  }
+  @media only screen and (min-width: 651px) {
+    .gButtonShort {
+      display: none;
+    }
+    .gButtonLong {
+      display: block;
+    }
+    #coords {
+      background-color: white;
+      display: block;
+      color: black;
+      padding: 5px;
+      margin: 0 10px 0 0;
+      border-radius: 3px 0px 3px 3px;
+      font-size: 12px;
+      boxShadow: 0 2px 6px rgba(0,0,0,.3);
+      text-align: center;
+      top: 78px !important;
+    }
+    #compass-open {
+    }
+    #compass-closed-button {
+      border: unset;
+      width: 30px;
+      height: 30px;
+      padding: unset;
+      margin: unset;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: unset;
+      padding-top: 1px;
+    }
+    #compass-closed {
+      display: none;
+      margin-right: 10px;
+      height: 30px;
+      width: 30px;
+      top: 60px !important;
+      background-image: url('compass.png');
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    #politics-legend {
+      display: none;
+      font-size: 12px;
+      height: 300px;
+      overflow: auto;
+      background-color: white;
+      box-Shadow: 0 2px 6px rgba(0,0,0,.3);
+      border-radius: 10px;
+      margin: 0 0 10px 10px;
+      background-color: #b4bcc7;
+    }
+    #politics-legend-list {
+      font-size: 12px;
+      padding-top: 20px;
+      height: 300px;
+      width: 220px;
+      background-color: white;
+      border-radius: 10px;
+      background-color: #b4bcc7;
+    }
+    #OSX-politics-legend, #politics-legend-list {
+      display: none;
+
+    }
+    #politics-legend textarea:focus, input:focus {
+      outline: none;
+    }
+    #politics-legend, #politics-legend-list li {
+      text-align: left;
+      list-style-type: none;
+    }
+    #politics-legend-title {
+      position: fixed;
+      background-color: rgb(163,162,177);
+      height: 20px;
+      padding-top: 6px;
+      z-index: 100;
+      border-radius: 10px 10px 0 0;
+      width: 220px;
+    }
+    .politics-legend-item {
+      position: relative;
+      padding-left: 40px;
+      text-indent: -40px;
+      margin: 2px 0 2px 0;
+    }
+    .politics-legend-item input {
+      padding-left: 20px;
+      border-color: white !important;
+      border-width: 0px;
+      background-color: inherit;
+
+    }
+    .politics-legend-item .legend-color {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
